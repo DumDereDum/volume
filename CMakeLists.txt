@@ -9,6 +9,8 @@ set(MAIN
 set(VOLUME
     volume/include/volume.hpp
     volume/src/volume.cpp
+    volume/src/volume_impl.hpp
+    volume/src/volume_impl.cpp
     )
 
 set(VOLUME_SETTINGS
