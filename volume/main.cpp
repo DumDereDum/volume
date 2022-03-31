@@ -6,6 +6,37 @@
 
 using namespace cv;
 
+class Volume
+{
+	public:
+		Volume(...);
+		~Volume();
+		void fun();
+
+		class Impl;
+
+	private:
+		Impl* pimpl;
+}
+
+
+class Volume::Impl
+{
+	public:
+		Impl(...);
+		virtual ~Impl();
+		virtual void fun() = 0;
+}
+
+class Volume1
+{
+	public:
+		Impl(...);
+		virtual ~Impl();
+		virtual void fun() override;
+}
+
+
 int main(int argc, char** argv)
 {
 
